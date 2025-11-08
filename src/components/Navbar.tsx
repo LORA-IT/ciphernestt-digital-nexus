@@ -34,9 +34,17 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 transition-transform hover:scale-105">
-            <img src={logo} alt="CipherNestt" className="h-12 w-auto drop-shadow-md" />
-          </Link>
+         <Link 
+                to="/" 
+                className="flex items-center gap-3 transition-transform hover:scale-105 justify-start"
+              >
+                <img 
+                  src={logo} 
+                  alt="CipherNestt" 
+                  className="h-12 w-auto drop-shadow-md object-contain"
+                />
+              </Link>
+
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 md:flex">
